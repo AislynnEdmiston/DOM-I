@@ -42,3 +42,25 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav
+const navItems = document.getElementsByTagName('a');
+
+//cta h1
+const headerOne = document.querySelector('h1');
+
+// btn
+const ctaBtn = document.querySelector('button');
+
+//cta Img
+const ctaImg = document.getElementById('cta-img');
+
+//  Main Content Headers
+const ftHeadings = document.getElementsByTagName('h4');
+
+// Middle Img
+const midImg = document.getElementById('middle-img');
+
+// Ft content
+const featContent = document.getElementsByTagName('p');
+
+//Contact 
+const contactHeading = document.getElementsByTagName('h4');
