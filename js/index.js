@@ -52,12 +52,15 @@ navItems[5].innerHTML = siteContent['nav']['nav-item-6'];
 
 //cta h1
 const headerOne = document.querySelector('h1');
+headerOne.innerHTML = siteContent['cta']['h1'];
 
 // btn
 const ctaBtn = document.querySelector('button');
+ctaBtn.innerHTML = siteContent['cta']['button'];
 
 //cta Img
 const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
 //  Main Content Headers
 const ftHeadings = document.getElementsByTagName('h4');
