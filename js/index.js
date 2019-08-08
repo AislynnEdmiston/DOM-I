@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav
-const navItems = document.getElementsByTagName('a');
+const navItems = document.querySelectorAll('a');
 navItems[0].innerHTML = siteContent['nav']['nav-item-1'];
 navItems[1].innerHTML = siteContent['nav']['nav-item-2'];
 navItems[2].innerHTML = siteContent['nav']['nav-item-3'];
@@ -50,9 +50,32 @@ navItems[3].innerHTML = siteContent['nav']['nav-item-4'];
 navItems[4].innerHTML = siteContent['nav']['nav-item-5'];
 navItems[5].innerHTML = siteContent['nav']['nav-item-6'];
 
+//Change nav items to green
+navItems.forEach(e => e.style.color = 'green');
+
+
+
+const nav = document.querySelector('nav');
+
+// prepend
+const frontTag = document.createElement('a');
+frontTag.innerHTML = 'prepend';
+frontTag.href = '#';
+nav.prepend(frontTag);
+
+// AppendChild
+const backTag = document.createElement('a');
+backTag.innerHTML = 'append';
+backTag.href = '#';
+nav.appendChild(backTag);
+
+
+
+
 //cta h1
 const headerOne = document.querySelector('h1');
 headerOne.innerHTML = siteContent['cta']['h1'];
+
 
 // btn
 const ctaBtn = document.querySelector('button');
