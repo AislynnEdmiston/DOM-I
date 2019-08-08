@@ -54,7 +54,7 @@ navItems[5].innerHTML = siteContent['nav']['nav-item-6'];
 navItems.forEach(e => e.style.color = 'green');
 
 
-
+// grabing the nav as a whole to prepend and append
 const nav = document.querySelector('nav');
 
 // prepend
@@ -69,13 +69,9 @@ backTag.innerHTML = 'append';
 backTag.href = '#';
 nav.appendChild(backTag);
 
-
-
-
 //cta h1
 const headerOne = document.querySelector('h1');
 headerOne.innerHTML = siteContent['cta']['h1'];
-
 
 // btn
 const ctaBtn = document.querySelector('button');
